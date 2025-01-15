@@ -42,10 +42,9 @@ text-decoration-skip-ink: none;
 
 .rodape-content article{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .contato-info{
@@ -62,7 +61,7 @@ text-decoration-skip-ink: none;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .media-icons{
@@ -81,4 +80,31 @@ text-decoration-skip-ink: none;
 .media-icons img{
   width: 30px;
   height: 32px;
+}
+
+@media screen and (max-width: 640px){
+
+.rodape-content article{
+ display: flex;
+  padding-bottom: 10px;
+}
+
+.contato-info{
+  display: flex;
+ 
+}
+
+.rodape-content aside{
+display: flex;
+  padding-top: 10px;
+}
+
+.media-icons{
+  display: flex;
+}
+
+.media-icons div{
+  display: flex;
+}
+
 }
