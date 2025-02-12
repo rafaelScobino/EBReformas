@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { text } from './landingpagetxt';
+import { ServicoCardComponent } from './servico-card/servico-card.component';
 
 @Component({
   selector: 'app-landingpage',
   templateUrl: './landingpage.component.html',
-  styleUrl: './landingpage.component.css'
+  styleUrl: './landingpage.component.css',
 })
 export class LandingpageComponent {
 

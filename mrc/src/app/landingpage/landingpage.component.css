@@ -1,3 +1,28 @@
+.fl{
+font-size:larger;}
+
 i{
   padding-right: 10px;
 }
+
+.carousel-inner .carousel-item img {
+  width: 100%;          /* Ensures the image stretches to the full width of the carousel */
+  height: 540px;        /* Set a fixed height for all images */
+  object-fit: fill;    /* Ensures images cover the area without distortion */
+  border-bottom-right-radius: 50px;
+}
+
+@media (max-width: 700px) {
+  .col-12 {
+    width: 100%;
+  }
+  .carousel-inner .carousel-item img{
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-inner .carousel-item img{
+    height: 300px;
+  }
+}
+

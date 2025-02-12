@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-servico-card',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './servico-card.component.css'
 })
 export class ServicoCardComponent {
+@Input()titulo: string = '';
+@Input()cardImgUrl: string = '';
+@Input()cardContent: string='';
+
+constructor(){
+
+}
 
 }
