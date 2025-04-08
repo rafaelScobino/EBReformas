@@ -1,8 +1,11 @@
-<div class="card" style="width: 18rem;">
-  <img src="{{cardImgUrl}}" class="card-img-top" alt="..." style="height: 200px; width: 100%;">
+<div class="card " style="width: 25rem; border: none; background-color: rgba(245, 245, 245, 1)" >
   <div class="card-body">
-    <h5 class="card-title">{{titulo}}</h5>
-    <p class="card-text">{{cardContent}}</p>
-    <a href="#" class="btn btn-primary">Saiba Mais</a>
+    <h3 class="card-title">{{titulo}}</h3>
+    <img src="{{cardImgUrl}}" class="card-img-top mt-3" alt="..." style="height: 200px; width: 100%; border-radius: 20px;">
+    <p 
+    class="card-text mt-3" 
+    [innerHTML]="cardContent"
+    ></p>
+    <a href="#" class="btn btn-dark">Saiba Mais</a>
   </div>
 </div>

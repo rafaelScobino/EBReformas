@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { text } from './landingpagetxt';
-import { ServicoCardComponent } from './servico-card/servico-card.component';
 
 @Component({
     selector: 'app-landingpage',
@@ -11,5 +10,14 @@ import { ServicoCardComponent } from './servico-card/servico-card.component';
 export class LandingpageComponent {
 
   text = text
+  screenWidth = window.innerWidth;
 
+  mobileCheck(){
+  if (this.screenWidth < 800) {
+    return true 
+  } 
+  return false
+  }
+ 
 }
+
